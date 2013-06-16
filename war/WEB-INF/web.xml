@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  
+  <!-- HelloServlet -->
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.HelloServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/hellovarnalab</url-pattern>
+  </servlet-mapping>
+  <!-- END HelloServlet -->
+  
+  <!-- UserServiceServlet -->
+  <servlet>
+    <servlet-name>UserServiceServlet</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.UserServiceServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserServiceServlet</servlet-name>
+    <url-pattern>/private</url-pattern>
+  </servlet-mapping>
+  <!-- END UserServiceServlet -->
+  
+  <!-- Blob Store -->
+  
+  <!-- BlobstoreUploadServlet -->
+  <servlet>
+    <servlet-name>BlobstoreUploadServlet</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.BlobstoreUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>BlobstoreUploadServlet</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  <!-- END BlobstoreUploadServlet -->
+  
+  <!-- BlobstorePreview -->
+  <servlet>
+    <servlet-name>BlobstorePreview</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.BlobstorePreview</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>BlobstorePreview</servlet-name>
+    <url-pattern>/blobstorepreview</url-pattern>
+  </servlet-mapping>
+  <!-- END BlobstorePreview -->
+  <!-- END Blob Store -->
+  
+  <!-- TaskQueueServlet -->
+  <servlet>
+    <servlet-name>TaskQueueServlet</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.TaskQueueServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>TaskQueueServlet</servlet-name>
+    <url-pattern>/taskqueue</url-pattern>
+  </servlet-mapping>
+  <!-- END TaskQueueServlet -->
+  
+  <!-- WorkerServlet -->
+  <servlet>
+    <servlet-name>WorkerServlet</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.WorkerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>WorkerServlet</servlet-name>
+    <url-pattern>/worker</url-pattern>
+  </servlet-mapping>
+  <!-- END WorkerServlet -->
+  
+  <!-- DatastoreEntitiyServlet -->
+  <servlet>
+    <servlet-name>DatastoreEntitiyServlet</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.DatastoreEntitiyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DatastoreEntitiyServlet</servlet-name>
+    <url-pattern>/datastore-entities</url-pattern>
+  </servlet-mapping>
+  <!-- END DatastoreEntitiyServlet -->
+  
+  <!-- DatastoreQueryServlet -->
+  <servlet>
+    <servlet-name>DatastoreQueryServlet</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.DatastoreQueryServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DatastoreQueryServlet</servlet-name>
+    <url-pattern>/datastore-queries</url-pattern>
+  </servlet-mapping>
+  <!-- END DatastoreQueryServlet -->
+  
+  <!-- DatastoreTransactionServlet -->
+  <servlet>
+    <servlet-name>DatastoreTransactionServlet</servlet-name>
+    <servlet-class>org.varnalab.gaedemos.DatastoreTransactionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DatastoreTransactionServlet</servlet-name>
+    <url-pattern>/datastore-transactions</url-pattern>
+  </servlet-mapping>
+  <!-- END DatastoreTransactionServlet -->
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Varna_Lab_Demos.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Security -->  	
+  <security-constraint>
+  	<web-resource-collection>
+  		<web-resource-name>private</web-resource-name>
+  		<url-pattern>/private/*</url-pattern>
+  	</web-resource-collection>
+  	<auth-constraint>
+  		<role-name>*</role-name> <!-- Users roles can be : user, admin -->
+  	</auth-constraint>
+  </security-constraint>
+
+</web-app>

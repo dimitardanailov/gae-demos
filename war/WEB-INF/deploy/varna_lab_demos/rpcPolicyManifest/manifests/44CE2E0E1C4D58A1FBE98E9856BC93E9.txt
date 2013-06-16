@@ -1,0 +1,2 @@
+serviceClass: org.varnalab.gaedemos.client.GreetingService
+path: ADB25F635739B02B3307F935DDD94A48.gwt.rpc

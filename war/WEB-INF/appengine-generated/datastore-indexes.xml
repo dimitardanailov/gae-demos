@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes>
+  <datastore-index kind="Line">
+    <property name="seats" direction="asc" />
+    <property name="seats" direction="desc" />
+  </datastore-index>
+</datastore-indexes>
