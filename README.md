@@ -12,7 +12,6 @@ Services :
 Hello App Engine
 </li>
 <li>
-<li>
 User Service - Authenticaton
 </li>
 <li>
