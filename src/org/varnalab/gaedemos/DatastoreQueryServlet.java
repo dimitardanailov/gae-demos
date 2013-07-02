@@ -48,6 +48,7 @@ public class DatastoreQueryServlet extends HttpServlet {
 	}
 	
 	private void getLinesByCityName(HttpServletResponse response, String cityFilter) throws IOException {
+		
 		Filter filterByCity = new FilterPredicate("city", FilterOperator.EQUAL, cityFilter); 
 		Query query = new Query(this.kind);
 		query.setFilter(filterByCity);
