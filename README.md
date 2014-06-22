@@ -77,4 +77,8 @@ Online demos : <a href="http://gae-varna-lab.appspot.com" target="_blank" title=
 <li>
 <a href="https://www.youtube.com/watch?v=buV15PztduI&feature=youtu.be" target="_blank" title="Google App Engine - Intro">Google App Engine Part 1</a>
 </li>
+
+<li>
+<a href="https://www.youtube.com/watch?v=pbF6UNMmyuw" target="_blank" title="Google App Engine - Intro">Google App Engine Part 2</a>
+</li>
 </ul>
