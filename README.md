@@ -39,8 +39,6 @@ Datastore - Transactions
 Online demos : <a href="http://gae-varna-lab.appspot.com" target="_blank" title="Google App Engine Presentation - 19.06.2013">Google App Engine Presentation - 19.06.2013</a>
 </div>
 
-<hr/>
-
 <h2>Varna Lab</h2>
 
 <h3>Presentations</h3>
@@ -58,8 +56,6 @@ Online demos : <a href="http://gae-varna-lab.appspot.com" target="_blank" title=
 </div>
 </li>
 </ul>
-
-<hr/>
 
 <h2>Soft Uni</h2>
 
